@@ -108,8 +108,8 @@ body{overflow:hidden;}
 #my_msg .my_bubble_warp .my_talkbubble .sell_ptn li:nth-child(4) {width:98%; height:38px; color:#148fe5; font-size:16px; text-align:right; line-height:38px;}
 #my_msg .my_bubble_warp .my_talkbubble .sell_ptn li:nth-child(4):active {background:rgba(0,0,0,.1);}
 
-.call_video_on {display:inline-block; padding:8px 0 8px 37px; background:url(../images/ico_video.png) no-repeat left center; background-size:31px 31px; color:#4d5356;}
-.call_video_off {display:inline-block; padding:8px 0 8px 37px; background:url(../images/ico_video_gray.png) no-repeat left center; background-size:31px 31px; color:#747474;}
+.call_video_on {display:inline-block; padding:8px 0 8px 37px; background:url(http://image.bbjang.com/imgs/bbjang/chatting/ico_video.png) no-repeat left center; background-size:31px 31px; color:#4d5356;}
+.call_video_off {display:inline-block; padding:8px 0 8px 37px; background:url(http://image.bbjang.com/imgs/bbjang/chatting/ico_video_gray.png) no-repeat left center; background-size:31px 31px; color:#747474;}
 .msg_img {width:100px; height:auto;}
 .user_photo {position:absolute; top:0; left:0; width:142px; height:111px;}
 .bbj_logo {position:absolute; top:38px; left:29px;}
@@ -149,8 +149,8 @@ body{overflow:hidden;}
 
 /*20170817 정우아 수정*/
 /* 음성 통화 추가 170222 주철만 */
-.call_phone_on {display:inline-block; padding:8px 0 8px 37px; background:url(../images/ico_phone.png) no-repeat left center; background-size:31px 31px; color:#4d5356;}
-.call_phone_off {display:inline-block; padding:8px 0 8px 37px; background:url(../images/ico_phone_gray.png) no-repeat left center; background-size:31px 31px; color:#747474;}
+.call_phone_on {display:inline-block; padding:8px 0 8px 37px; background:url(http://image.bbjang.com/imgs/bbjang/chatting/ico_phone.png) no-repeat left center; background-size:31px 31px; color:#4d5356;}
+.call_phone_off {display:inline-block; padding:8px 0 8px 37px; background:url(http://image.bbjang.com/imgs/bbjang/chatting/ico_phone_gray.png) no-repeat left center; background-size:31px 31px; color:#747474;}
 
 /* 안읽음메시지 없을때 추가 170302 주철만 */
 #my_msg .my_bubble_warp .my_talk_time_none {display:block; position:absolute; left:-63px; bottom:2px; color:#5d6366; font-size:13px;}/*20170817 수정*/

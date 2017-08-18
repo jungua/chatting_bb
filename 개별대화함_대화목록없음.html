@@ -1,0 +1,1133 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>방부장</title>
+<link rel="stylesheet" type="text/css" href="css/bb_font.css">
+<link rel="stylesheet" type="text/css" href="css/bb_default.css">
+<link rel="stylesheet" type="text/css" href="http://devm-lynone.bbjang.com/_global/assets/css/bb_pop.css">
+<link rel="stylesheet" type="text/css" href="css/bb_chatting.css">
+<link rel="stylesheet" type="text/css" href="http://devm-lynone.bbjang.com/assets/js/cropper/cropper.min.css?ver=1502874439">
+<style>
+#wrap .viewOrHide {display:none;}
+body {background:#7abadd;}
+#container .msg_btn_wrap {height:40px;top:0px;}
+.msg_img {cursor:pointer}
+.mg_top83 {margin-top:0px;padding-top:83px; }
+#msgArea {padding-bottom:10px}
+</style>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+document.domain = 'bbjang.com';
+</script>
+</head>
+<body>
+    <span id="connectionStatus" style="position:absolute; z-index:9000; top:0px; left:0px;">&nbsp;<b><font color="red" size="2">O</font></b></span>
+    <div id="msg_wrap" class="pd_50 full_page_msg" style="height: 568px;">
+		<div id="header" class="ht_45 bg_white header_f">
+		<div class="btn_back">
+			<a href="javascript:void(0);" onclick="cl.goBack()">뒤로</a>
+		</div>
+		<h1 class="header_txt_g font_b">방사장</h1><!--클래스명 변경-->
+		<div class="btn_package">
+		    <div class="btn_gohome"><a href="javascript:void(0);" onclick="cl.finishWinAll();"><img src="http://image.bbjang.com/imgs/bbjang/img_button/logo_blue.png" alt="홈"></a></div>
+		</div>
+	    </div>
+	    <div id="container">
+		    <!-- 상세메시지 버튼바 -->
+		    <div class="msg_btn_wrap header_f mg_top45">
+                <ul class="font_r">
+                    <li><a href="javascript:void(0);" onclick="location.replace('/msgBox/msgList/');">대화함</a></li>
+                    <li><a href="javascript:void(0);" onclick="msgDel();">삭제</a></li>
+                    <li><a href="javascript:void(0);" onclick="myArticle();">+ 내 매물 소개</a></li>
+                </ul>
+		    </div>
+		<!-- // 상세메시지 버튼바 -->
+	    </div>
+	    <!-- 리스트 시작 -->
+	    <div id="msg_content_warp" class="pd_50 mg_top83">
+	        <div class="list_none">
+	            <p class="list_empty_row1 my_mt_45">
+			    <img src="http://image.bbjang.com/imgs/bbjang/chatting/content_none.png" width="65" height="65">
+		        </p>
+		        <p class="list_empty_row2 row3 font_r">
+			         아직 주고받은 메시지가 없습니다.
+		        </p>
+		        <p class="list_empty_row2 font_r">
+			        메시지를 전송하시면 대화내용을 볼 수 있습니다.
+                </p>
+	        </div>
+		    <div id="msgArea" style="display:none;">
+	            <div id="lodingMore" class="load_wrap" style="display:none;">
+  		          <img src="http://image.bbjang.com/imgs/bbjang/chatting/loading_w.gif" width="32px" height="32px" alt="로딩이미지">
+	            </div>
+	            <p class="font_b dayline">
+                    <span class="day_division">2017년 08월 17일</span>
+                </p><!--20170817 정우아 날짜구분선추가-->
+	    		<div class="msg_day_wrap" id="dayArea20170817">
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_man.png" width="40" height="40" alt="상대사진">	
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">안녕하세요</div>
+                            <span class="ptn_talk_time font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_man.png" width="40" height="40" alt="상대사진">				</div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">								<ul class="sell_ptn">									        <li>
+                                        <img src="http://photo.bbjang.com/prg/bbImg.php?type=photo&amp;sdir=&amp;viewname=aHmAfICxd4hVcGNqaIB-f3-IeoiDpmGipbA." width="87" height="30" class="user_photo">
+                                    </li>
+                                    <li>
+                                        <span class="font_b">전세 | </span><span></span>
+                                    </li>
+                                    <li>
+                                        <span>서울 강남 아파트 양재역근처 아파트</span>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="cl.openWin('/dealconts/dealView/?bangNo=2747&amp;memNo=10029', 'bangconts');">매물정보보기&nbsp; <img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_arrow.png" width="9" height="14"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="ptn_talk_time font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_man.png" width="40" height="40" alt="상대사진">				</div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">								<a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/img.png" width="186" height="280" class="msg_img"></a>
+                            </div>
+                            <span class="ptn_talk_time font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">서울 강남 아파트 양재역 근처 매물 내놓으신 것 때문에 메시지 드립니다. 지금 상담가능할까요?</div>		<span class="ptn_talk_time font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap"><!---내 메시지 시작-->
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">								상담가능합니다
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/img2.png" width="280" height="194" class="msg_img"></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">얼마에 가능하죠?</div>		<span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">
+                            <div class="ptn_talkbubble font_r">
+                                <a href="#"><span class="call_video_on font_b">영상상담신청</span></a>
+                            </div>    
+                            <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">
+                            <div class="ptn_talkbubble font_r">
+                                <a href="#"><span class="call_video_on font_b">1:50</span></a>
+                            </div>    
+                            <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">
+                            <span class="call_video_off font_b">부재중</span>
+                            </div>
+                        <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">
+                            <div class="ptn_talkbubble font_r">
+                                <a href="#"><span class="call_phone_on font_b">통화상담신청</span></a>
+                            </div>    
+                            <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">
+                            <div class="ptn_talkbubble font_r">
+                                <a href="#"><span class="call_phone_on font_b">5:50</span></a>
+                            </div>    
+                            <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">
+                            <span class="call_phone_off font_b">부재중</span>
+                            </div>
+                        <span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">감사합니다~</div>			<span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">
+                            <div class="ptn_talkbubble font_r">네 고맙습니다~</div>	<span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="font_b dayline">
+                    <span class="day_division">2017년 08월 14일</span>
+                </p><!--20170817 정우아 날짜구분선추가-->
+	    		<div class="msg_day_wrap" id="dayArea20170817">
+                    <div id="my_msg" class="msg_bubble_wrap"><!---내 메시지 시작-->
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">								지금 매물 건 상담가능합니다. 편하실 때 연락주시면 됩니다. 언제든지 상담할 수 있습니다.
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:09</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_video_on font_b">영상상담신청</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_video_on font_b">2:30</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_video_off font_b">안받음</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_phone_on font_b">통화상담신청</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_phone_on font_b">2:30</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <a href="#"><span class="call_phone_off font_b">안받음</span></a>
+                            </div>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">
+                                <ul class="sell_ptn">									        <li>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/chatting/img.png" width="186" height="280" class="user_photo">
+                                    </li>
+                                    <li>
+                                        <span class="font_b">구해요 | </span>전세 3억<span></span>
+                                    </li>
+                                    <li>
+                                        <span>서울 강남 아파트 양재역근처 아파트</span>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" onclick="cl.openWin('/dealconts/dealView/?bangNo=2747&amp;memNo=10029', 'bangconts');">매물정보보기&nbsp; <img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_arrow.png" width="9" height="14"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="ptn_none font_r">안읽음</span>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="ptn_msg" class="msg_bubble_wrap">
+                        <div class="photo_ptn">
+                            <img src="http://image.bbjang.com/imgs/bbjang/chatting/p_woman.png" width="40" height="40" alt="상대사진">
+                        </div>
+                        <div class="ptn_txt_line font_r">
+                            <span class="ptn_txt">방사장</span>
+                            <div class="btn_msg_report font_r"><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/report_r.png" alt="신고" />신고</a></div>
+                        </div>
+                        <div class="talkbubble_wrap ptn_bubble_wrap">					<div class="ptn_talkbubble font_r">상담하고 싶어요</div>		<span class="ptn_talk_time font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                    <div id="my_msg" class="msg_bubble_wrap">
+                        <div class="talkbubble_wrap my_bubble_warp">					<div class="my_talkbubble font_r">지금 상담가능해요</div>
+                            <span class="ptn_none font_r">안읽음</span>
+                            <span class="my_talk_time_none font_r">오전 09:10</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="msgEnd"></div>
+	      </div>
+	</div><!--리스트 끝-->
+	<!---하단 바 시작-->
+	<div id="photoArea" nowview="0"></div>
+	<!-- 메시지 입력창 -->
+	<div class="msg_input_wrap">
+		<div class="msg_bar">
+							<!-- 일반 입력창 -->
+				<ul class="msg_text_box">
+				    <li>
+					<a href="#" class="btn_more"><img src="http://image.bbjang.com/imgs/bbjang/chatting/m_plusbtn.png" width="14" height="14" alt="더보기"></a>
+					<!--클릭시 버튼 등장-->
+					</li>
+					<li>
+					<a href="javascript:void(0);" onclick="photoSend();" class="btn_camera"><img src="http://image.bbjang.com/imgs/bbjang/img01/ico_msg_photo.png" width="20" height="17" alt="사진전송"></a>
+					<!-- 사진 첨부 -->
+					</li>
+					<li>
+					<input type="text" class="textarea" id="sendConts" value="" placeholder="이곳에 메시지를 입력하세요">
+					<!-- 글쓰기 -->
+					</li>
+					<li>
+					<a href="javascript:void(0);" onclick="msgSend();" class="btn_send">전송</a>
+					<!-- 전송 버튼 -->
+					</li>
+				</ul>
+					</div>
+	</div>
+	<div class="call_form" style="display:none;">
+	    <ul class="call_form_u font_r">
+	        <li><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/ico_btn_layer_cp.jpg" alt="전화" />전화걸기</a></li>
+	        <li><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/ico_btn_layer_pm.jpg" alt="문자보내기" />문자보내기</a></li>
+	        <li><a href="#"><img src="http://image.bbjang.com/imgs/bbjang/chatting/ico_btn_layer_vc.jpg" alt="무료영상통화" />무료영상통화</a></li>
+	    </ul>
+	</div>
+	<!-- // 메시지 입력창 -->
+</div>
+<div id="popArticle"></div>
+
+<div id="popForm"></div>
+<div id="popEvent"></div>
+<div id="popToast"></div>
+<div id="popPhoto"></div>
+<div id="popRcvMsg"></div>
+<div id="popCropper"></div>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/jquery-cookie.js"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/common.js?ver=1502928621"></script>
+
+<script type="text/javascript">
+var $daumApiKey = 'b3c229665be60525d0cd32435537931d';
+var $kkoApiKey = '523a36eacc6bc0551caf4d6a2b1f3f12';
+var $marketLink = 'http://goo.gl/Hi6ofO';
+var $appLink = 'http://devm-cuteohj.bbjang.com';
+var $shareMinImg = 'http://image.club5678.com/imgs/bbjang/img_mms/mms_bbjang_185_185.jpg';
+var $shareBigImg = 'http://image.club5678.com/imgs/bbjang/img_mms/mms_bbjang_300_200.jpg';
+
+var $COORDS = cl.setGeo();
+var $isMobile = cl.isMobile();
+var $device = cl.getDevice();
+var $media = ($isMobile) ? ($device) ? 's' : 'x' : 'w';
+var $platform = cl.getPlatform();
+var $isApp = ($device) ? true : false;
+var $isReal = 1;
+var $gJsUrl = "http://devm-cuteohj.bbjang.com/_global/assets/js";
+var $vJsUrl = "http://devm-cuteohj.bbjang.com/assets/js";
+var $vUiUrl = "http://devm-cuteohj.bbjang.com/assets/ui";
+var $gJsVer = "1502928621";
+var isDebug = function() {
+	return true;
+}
+</script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/sessionPacketRouter.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/NodeBangSession.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/jquery-ui.min-1.12.1.js"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/_global/assets/js/jquery-mobile.event.min.js"></script>
+<script type="text/javascript">
+<!--
+$(document).on("ready",function(){
+	cl.srchReloadList();
+	var locName = window.location.pathname+window.location.search;
+	localStorage.setItem("setWindowPathName",locName);
+	$(window).on("focus",function(){
+		localStorage.setItem("setWindowPathName",locName);
+		var noReadCnt = localStorage.getItem("msgCnt");
+
+		if(localStorage.getItem("forceLogout") == '1') {
+			localStorage.setItem("forceLogout", '');
+			window.location.replace('/member/info/logout');
+		}
+
+		if(cl.srchReloadList()){
+			window.location.reload();
+		}else{
+			cl.displayBadgeCnt();
+		}
+	});
+
+	$(window).on("popstate",function(){
+		cl.popState();
+	});
+
+	$(window).on("unload",function(){
+		//if(cl.subWin!==true) cl.clearAllWin({cmd:"closeWinPause"});
+		cl.setLayerPopCnt();
+	});
+
+	$(window).on("load",function(){
+		cl.subWin();
+		if($.cookie('gCCV:NO')) cl.userBlockChk();
+		cl.delLayerPopCnt();
+
+				if($.cookie('setAutoLogin')) {
+						$.cookie('setAutoLogin',$.cookie('setAutoLogin'),{expires:24*30, path:'/', domain:'.bbjang.com'});		}
+		
+	});
+});
+//-->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90614254-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiCommon.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiNotice.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiPopup.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/js/cropper/cropper.min.js"></script><script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/js/contsComm.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiSingo.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiUpload.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/ui/uiPhotoView.js?ver=1502928621"></script>
+<script type="text/javascript" src="http://devm-cuteohj.bbjang.com/assets/js/util.js"></script>
+<script type="text/javascript">
+
+$(document).on("ready",function(){
+	var _bangNo = "";
+	var _ptrMemNo = "10029";
+	var tmpl;
+	var photoParam = new Array();
+	var notReadCnt;
+
+	getListProcAjax = function(_param){
+		$.ajax({
+			async: false,
+			cache: false,
+			type:"POST",
+			url:"/msgBox/msgView/msgViewAjax",
+			dataType:"json",
+			data:_param,
+			success: function(result){
+				// console.log(result);
+				//var html = tmpl(result);
+
+				if(!result.notReadCnt) result.notReadCnt = 0;
+				notReadCnt = result.notReadCnt;
+				cl.setAppNotReadCnt(notReadCnt);
+
+				if(result.totCnt == 0){
+					//매물정보 ui를 보여준다.
+					$('#lodingMore').hide();
+				}else{
+					$('#lodingMore').hide();
+
+					if(result.arPhotoList) {
+						photoParam = result.arPhotoList;
+						new photoView({'viewHeight':225, 'mngBtnView':false, 'cssHead':'dt'});
+						g_photoView.photoParamPut(photoParam);
+					}
+
+					var msgViewTag = new Array();
+					for(var i=0;i<result.arList.length;i++){
+						if(result.arList[i].dateViewS){
+							msgViewTag.push('		<div class="msg_day_wrap" id="dayArea' + result.arList[i].keyVal + '">');
+							msgViewTag.push('			<div class="msg_day_line font_r" id="dayView' + result.arList[i].keyVal + '">');
+							msgViewTag.push('				<p>');
+							msgViewTag.push('					 ' + result.arList[i].dateView + '');
+							msgViewTag.push('				</p>');
+							msgViewTag.push('			</div>');
+						}
+						if(result.arList[i].msgType){
+							msgViewTag.push('			<div id="my_msg" class="msg_bubble_wrap">');
+							msgViewTag.push('				<div class="talkbubble_wrap my_bubble_warp">');
+							msgViewTag.push('					<div class="my_talkbubble font_r">');
+							if(result.arList[i].msgPhotoUrl){
+								msgViewTag.push('            <img src="' + result.arList[i].msgPhotoUrl + '" width="100" height="auto" class="msg_img" photoIndex="' + result.arList[i].photoIndex + '" onclick="msgPhotoView(' + result.arList[i].photoIndex + ');">');
+							}else{
+								if(result.arList[i].msgCallTime){
+									if(result.arList[i].msgCallScript){
+										msgViewTag.push('							<span class="' + result.arList[i].msgCallCSS + ' font_b" onclick="' + result.arList[i].msgCallScript + '" style="cursor:pointer">' + result.arList[i].msgCallTime + ' &nbsp; &gt;</span>');
+									}else{
+										msgViewTag.push('							<span class="' + result.arList[i].msgCallCSS + ' font_b">' + result.arList[i].msgCallTime + '</span>');
+									}
+								}else{
+									if(result.arList[i].bangNo){
+										msgViewTag.push('								<ul class="sell_ptn">');
+										msgViewTag.push('									<li><img src="' + result.arList[i].bangPhotoUrl + '" width="87" height="30" class="' + result.arList[i].bangCSS + '"></li>');
+										if(result.arList[i].bangBuyUi){
+											msgViewTag.push('									<li><span class="font_b">구해요 | </span><span>' + result.arList[i].bangType + ' ' + result.arList[i].bangAmt + '</span></li>');
+										}else{
+											msgViewTag.push('									<li><span class="font_b">' + result.arList[i].bangType + ' | </span><span>' + result.arList[i].bangAmt + '</span></li>');
+										}
+										msgViewTag.push('									<li><span>' + result.arList[i].bangName + '</span></li>');
+										msgViewTag.push('									<li><a href="javascript:void(0);" onclick="cl.openWin(\'/dealconts/dealView/?bangNo=' + result.arList[i].bangNo + '&memNo=' + result.arList[i].ptr_mem_no + '\', \'bangconts\');">매물정보보기&nbsp; <img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_arrow.png" width="9" height="14"></a></li>');
+										msgViewTag.push('								</ul>');
+									}else{
+										msgViewTag.push('								' + result.arList[i].msgCont + '');
+									}
+								}
+							}
+							msgViewTag.push('					</div>');
+							if(result.arList[i].notReadView){
+								msgViewTag.push('					<span class="my_talk_time font_r">' + result.arList[i].msgTime + '</span>');
+							}else{
+								msgViewTag.push('					<span class="my_talk_time_none font_r">' + result.arList[i].msgTime + '</span>');
+							}
+							msgViewTag.push('				</div>');
+							msgViewTag.push('			</div>');
+						}else{
+							msgViewTag.push('			<div id="ptn_msg" class="msg_bubble_wrap">');
+							if(result.arList[i].ptr_mem_no == 1) {
+								msgViewTag.push(`
+									<div class="badge_l">
+										<img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_badge_bb.png" width="36" height="15" alt="운영자">
+									</div>
+								`)
+
+								result.arList[i].photoUrl = 'http://image.bbjang.com/imgs/bbjang/img01/img_msg_photo_bb.png';
+								result.arList[i].ptrName = '방부장운영자';
+							}
+							msgViewTag.push('				<div class="photo_ptn">');
+							msgViewTag.push('					<img src="' + result.arList[i].photoUrl + '" width="74" height="74" alt="상대사진">');
+							msgViewTag.push('				</div>');
+							msgViewTag.push('				<div class="ptn_txt_line font_r">');
+							msgViewTag.push('					<span class="ptn_txt">' + result.arList[i].ptrName + '</span>');
+							msgViewTag.push('				</div>');
+							msgViewTag.push('				<div class="talkbubble_wrap ptn_bubble_wrap">');
+							msgViewTag.push('					<div class="ptn_talkbubble font_r">');
+							if(result.arList[i].msgPhotoUrl){
+								msgViewTag.push('            <img src="' + result.arList[i].msgPhotoUrl + '" width="100" height="auto" class="msg_img" photoIndex="' + result.arList[i].photoIndex + '" onclick="msgPhotoView(' + result.arList[i].photoIndex + ');">');
+							}else{
+								if(result.arList[i].msgCallTime){
+									if(result.arList[i].msgCallScript){
+										msgViewTag.push('					<span class="' + result.arList[i].msgCallCSS + ' font_b" onclick="' + result.arList[i].msgCallScript + '" style="cursor:pointer">' + result.arList[i].msgCallTime + ' &nbsp; &gt;</span>');
+									}else{
+										msgViewTag.push('					<span class="' + result.arList[i].msgCallCSS + ' font_b">' + result.arList[i].msgCallTime + '</span>');
+									}
+								}else{
+									if(result.arList[i].bangNo){
+										msgViewTag.push('								<ul class="sell_ptn">');
+										msgViewTag.push('									<li><img src="' + result.arList[i].bangPhotoUrl + '" width="87" height="30" class="' + result.arList[i].bangCSS + '"></li>');
+										if(result.arList[i].bangBuyUi){
+											msgViewTag.push('									<li><span class="font_b">구해요 | </span><span>' + result.arList[i].bangType + ' ' + result.arList[i].bangAmt + '</span></li>');
+										}else{
+											msgViewTag.push('									<li><span class="font_b">' + result.arList[i].bangType + ' | </span><span>' + result.arList[i].bangAmt + '</span></li>');
+										}
+										msgViewTag.push('									<li><span>' + result.arList[i].bangName + '</span></li>');
+										msgViewTag.push('									<li><a href="javascript:void(0);" onclick="cl.openWin(\'/dealconts/dealView/?bangNo=' + result.arList[i].bangNo + '&memNo=' + result.arList[i].ptr_mem_no + '\', \'bangconts\');">매물정보보기&nbsp; <img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_arrow.png" width="9" height="14"></a></li>');
+										msgViewTag.push('								</ul>');
+									}else{
+										msgViewTag.push('								' + result.arList[i].msgCont + '');
+									}
+								}
+							}
+							msgViewTag.push('					</div>');
+							msgViewTag.push('					<span class="ptn_talk_time font_r">');
+							msgViewTag.push('					  ' + result.arList[i].msgTime + '');
+							if(result.arList[i].ptr_mem_no != '1') {
+								msgViewTag.push('            <a href="javascript:void(0);" onclick="reportMsg(\'' + result.arList[i].auto_no + '\',\'' + result.arList[i].ptr_mem_no + '\',\'' + result.arList[i].msgCont + '\',\'' + result.arList[i].file_name + '|' + result.arList[i].file_size + '\');" class="btn_msg_report"></a>');
+							}
+							msgViewTag.push('          </span>');
+							msgViewTag.push('				</div>');
+							msgViewTag.push('			</div>');
+						}
+						if(result.arList[i].dateViewE){
+							msgViewTag.push('		</div>');
+						}
+					}
+					msgViewTag = msgViewTag.join('');
+					$("#msgEnd").before(msgViewTag);
+					$('#msg_content_warp').scrollTop($('#msgArea').height());
+				}
+			},
+			error: function(xhr,status,error){
+				cl.ajaxErr(xhr.responseText);
+			}
+		});
+	}
+
+	getList = function(){
+		this.pageStop = false;
+		this.page  = 1;
+		this.listProc = function(){
+			if(!this.pageStop){
+				var param = {"bangNo":_bangNo,"pmemNo":_ptrMemNo,"pageNo":this.page,"pagePerCnt":600};
+				getListProcAjax(param);
+			}
+		}
+	};
+
+	// 허위매물신고(class.controls.dealView에서 호출)
+	reportMsg = function(_autoNo, _ptrMemNo, _msg, _photoUrl){
+		if(_photoUrl == "|") _photoUrl = "";
+		var singoParam = {
+			'singoType' : UI_SINGO_TYPE_MESSAGE,
+			'targetMemNo' : _ptrMemNo,
+			'btn1CallBack' : null,
+			'btn2CallBack' : null,
+			'singoNo' : _autoNo,
+			'msg' : _msg,
+			'fileName' : _photoUrl,
+		};
+		//console.log(singoParam);
+		var popupSingoEx = new CSingoEx(singoParam);
+	};
+
+	uploadFinish = function (_param) {
+		//console.log(_param);
+		if(_param.retCode == "1"){
+			var arImgInfo = _param.imgInfo.split('|');
+			//console.log(_param.imgInfo.split("|"));
+			var data = {
+				'bangNo' : _bangNo,
+				'pmemNo' : _ptrMemNo,
+				'msgSlct' : '2', // 0:text,1:이모티콘,2:파일,3:전화,4:영상통화,5:매물소개
+				'msgCont' : '',
+				'msgEtc' : '',
+				'fileName':arImgInfo[0],
+				'fileSize':arImgInfo[1] + '|' + arImgInfo[2]
+			};
+
+			//console.log(data);
+			if(localStorage.newMsgChk){
+				beforeSend();
+				setTimeout(function(){
+					cl.sendMsg(data);
+				},300);
+			}else{
+				cl.sendMsg(data);
+			}
+		}else{
+			new CToastEx({"msg":"사진 전송이 실패했습니다.<br/>잠시 후 다시 시도해 주세요","elapse":2000});
+		}
+	}
+
+	photoSend = function () {
+		if(_ptrMemNo == "1"){
+			new CToastEx({"msg":"운영자에게는 1:1문의하기로<br/> 연락하실 수 있습니다.","elapse":2000});
+		}else{
+			g_upload.addPhoto();
+			//m_commLoading.start();
+		}
+	}
+
+	cvtTag = function (_str){
+		_str = _str.replace(/</g,"&lt;");
+		_str = _str.replace(/>/g,"&gt;");
+		_str = _str.replace(/\"/g,"&quot;");
+		_str = _str.replace(/\'/g,"&#39;");
+		//_str = _str.replace(/\"/g,"");
+		//_str = _str.replace(/\'/g,"");
+		_str = _str.replace(/\n/g," ");
+		return _str;
+	}
+
+	msgSend = function () {
+		if(_ptrMemNo == "1"){
+			new CToastEx({"msg":"운영자에게는 1:1문의하기로<br/> 연락하실 수 있습니다.","elapse":2000});
+		}else{
+			var sendConts = $('#sendConts').val();
+			if($.trim(sendConts).length > 100){new CToastEx({"msg":"100자까지 입력가능합니다","elapse":2000});return}
+			if($.trim(sendConts).length < 1){new CAlertEx({msg:"메시지 내용을 입력해 주세요",btnCallback:function(){$("#sendConts").focus();}});return;}
+
+			var data = {
+				'bangNo' : _bangNo,
+				'pmemNo' : _ptrMemNo,
+				'msgSlct' : '0', // 0:text,1:이모티콘,2:파일,3:전화,4:영상통화,5:매물소개
+				'msgCont' : cvtTag(sendConts),
+				'msgEtc' : '',
+				'fileName':'',
+				'fileSize':''
+			};
+			if(localStorage.newMsgChk){
+				console.log(localStorage.newMsgChk);
+				beforeSend();
+				setTimeout(function(){
+					cl.sendMsg(data);
+				},300);
+			}else{
+				cl.sendMsg(data);
+			}
+			$('#sendConts').val("").focus();
+		}
+	}
+
+	beforeSend = function () {
+		var arBangInfo = localStorage.newMsgChk.split('|');
+		var beforeData = {
+			'bangNo' : arBangInfo[0],
+			'pmemNo' : _ptrMemNo,
+			'msgSlct' : '5', // 0:text,1:이모티콘,2:파일,3:전화,4:영상통화,5:매물소개
+			'msgCont' : '매물소개',
+			'msgEtc' : '',
+			'fileName':'',
+			'fileSize':''
+		};
+		localStorage.removeItem("newMsgChk");
+		cl.sendMsg(beforeData);
+	}
+
+
+	msgDel = function () {
+		new CConfirmEx({
+			msg : "메시지를 모두 삭제하시겠습니까?",
+			btn2Callback : function(){
+				var postData = {'ptrMemNos':_ptrMemNo + ','};
+				$.ajax({
+					async: false,
+					cache: false,
+					type:"POST",
+					url:"/msgBox/msgList/msgDelAjax",
+					dataType:"json",
+					data:postData,
+					success: function(result){
+						$("#msg_content_warp").empty().append('<div id="msgEnd"></div>');
+						new CToastEx({"msg":"삭제되었습니다.","elapse":2000});
+					},
+					error: function(xhr,status,error){
+						cl.ajaxErr(xhr.responseText);
+					}
+				});
+			}
+		});
+	}
+
+	msgPrint = function (_param) {
+		//console.log(_param);
+		var msgPrintTag = new Array();
+		var msgConts = (_param.msg) ? cvtTag(_param.msg) : '';
+
+		if(_param.fileInfo && _param.msgImgUrl && _param.msgSlct == "2"){
+			var photoIndex = photoParam.length;
+			photoParam[photoIndex] = {"imgInfo":_param.fileInfo, "oImgUrl":_param.msgOrgImgUrl, "photoNo":photoIndex};
+			if(!g_photoView || g_photoView === null)	new photoView({'viewHeight':225, 'mngBtnView':false, 'cssHead':'dt'});
+			g_photoView.photoParamPut(photoParam);
+
+			var arImgInfo = _param.fileInfo.split('|');
+			if(parseInt(arImgInfo[1]) > parseInt(arImgInfo[2])) msgConts = '<img src="' + _param.msgImgUrl + '" width="280" height="auto" class="msg_img" photoIndex="' + photoIndex + '" onclick="msgPhotoView(' + photoIndex + ');">';
+			else msgConts = '<img src="' + _param.msgImgUrl + '" width="auto" height="280" class="msg_img" photoIndex="' + photoIndex + '" onclick="msgPhotoView(' + photoIndex + ');">';
+		}
+
+		if(_param.msgSlct == "3"){
+			var addMent = '신청';
+			if(_param.sendNo == _ptrMemNo) var addMent = '수신';
+			msgConts = '<span class="call_phone_on font_b">전화상담 &nbsp; &gt;</span>';
+		}
+
+		if(_param.msgSlct == "4"){
+			var addMent = '신청';
+			if(_param.sendNo == _ptrMemNo) var addMent = '수신';
+			msgConts = '<span class="call_video_on font_b">영상상담 &nbsp; &gt;</span>';
+		}
+
+		if(_param.sendEtc && _param.msgSlct == "5"){
+			var arBangInfo = _param.sendEtc;
+			var articleTag = new Array();
+
+			var photoCSS = 'user_photo';
+			if(arBangInfo.bangPhotoUrl == 'http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_logo.png') photoCSS = 'bbj_logo';
+			//console.log(arBangInfo);
+
+			articleTag.push('						<ul class="sell_ptn">');
+			articleTag.push('							<li><img src="' + arBangInfo.bangPhotoUrl + '" width="87" height="30" class="' + photoCSS + '"></li>');
+
+			if(arBangInfo.bangSlct == 'b') articleTag.push('							<li><span class="font_b">구해요 | </span><span>' + arBangInfo.bangType + ' ' + arBangInfo.bangAmt + '</span></li>');
+			else articleTag.push('							<li><span class="font_b">' + arBangInfo.bangType + ' | </span><span>' + arBangInfo.bangAmt + '</span></li>');
+
+			articleTag.push('							<li><span>' + arBangInfo.bangName + '</span></li>');
+			articleTag.push('							<li><a href="javascript:void(0);" onclick="cl.openWin(\'/dealconts/dealView/?bangNo=' + arBangInfo.bangNo + '&memNo=' + _param.sendNo + '\', \'bangconts\');">매물정보보기&nbsp; <img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_sell_arrow.png" width="9" height="14"></a></li>');
+			articleTag.push('						</ul>');
+			articleTag = articleTag.join('');
+			msgConts = articleTag;
+		}
+
+		//console.log($('.msg_day_line').length);
+
+		//오늘일자의 메시지가 있는가
+		var keyValName = 'dayArea' + _param.keyVal;
+		if($('#' + keyValName).length < 1){
+			msgPrintTag.push('		<div class="msg_day_wrap" id="dayArea' + _param.keyVal + '">');
+			msgPrintTag.push('			<div class="msg_day_line font_r" id="dayView' + _param.keyVal + '">');
+			msgPrintTag.push('				<p>');
+			msgPrintTag.push('					' + _param.sendDate + '');
+			msgPrintTag.push('				</p>');
+			msgPrintTag.push('			</div>');
+		}
+
+		if(_param.sendNo == _ptrMemNo){
+			msgPrintTag.push('			<div id="ptn_msg" class="msg_bubble_wrap">');
+			if(_param.sendNo == 1) {
+				msgPrintTag.push(`
+					<div class="badge_l">
+						<img src="http://image.bbjang.com/imgs/bbjang/img01/img_msg_badge_bb.png" width="36" height="15" alt="운영자">
+					</div>
+				`)
+
+				_param.photoUrl = 'http://image.bbjang.com/imgs/bbjang/img01/img_msg_photo_bb.png';
+				_param.ptrName = '방부장운영자';
+			}
+			msgPrintTag.push('				<div class="photo_ptn">');
+			msgPrintTag.push('					<img src="' + _param.sendMemPhotoUrl + '" width="74" height="74" alt="상대사진">');
+			msgPrintTag.push('				</div>');
+			msgPrintTag.push('				<div class="ptn_txt_line font_r">');
+			msgPrintTag.push('					<span class="ptn_txt">' + _param.sendName + '</span>');
+			msgPrintTag.push('				</div>');
+			msgPrintTag.push('				<div class="talkbubble_wrap ptn_bubble_wrap">');
+			msgPrintTag.push('					<div class="ptn_talkbubble font_r">');
+			msgPrintTag.push('						' + msgConts + '');
+			msgPrintTag.push('					</div>');
+			msgPrintTag.push('					<span class="ptn_talk_time font_r">');
+			msgPrintTag.push('					  ' + _param.sendTime + '');
+			if(_param.sendNo == 1) {
+				msgPrintTag.push('            <a href="javascript:void(0);" onclick="reportMsg(\'' + _param.rcvMsgNo + '\' , \'' + _param.sendNo + '\' , \'' + _param.msg + '\' , \'' + _param.fileInfo + '\');" class="btn_msg_report"></a>');
+			}
+			msgPrintTag.push('          </span>');
+			msgPrintTag.push('				</div>');
+			msgPrintTag.push('			</div>');
+
+			//메시지 읽음 처리
+			cl.callApi({"cmd":"message/updMsgNotReadAjax","rcvNo":_ptrMemNo});
+		}else{
+			msgPrintTag.push('			<div id="my_msg" class="msg_bubble_wrap">');
+			msgPrintTag.push('				<div class="talkbubble_wrap my_bubble_warp">');
+			msgPrintTag.push('					<div class="my_talkbubble font_r">');
+			msgPrintTag.push('						 ' + msgConts + '');
+			msgPrintTag.push('					</div>');
+			msgPrintTag.push('					<span class="my_talk_time font_r">' + _param.sendTime + '</span>');
+			msgPrintTag.push('				</div>');
+			msgPrintTag.push('			</div>');
+		}
+
+		if($('#' + keyValName).length < 1){
+			msgPrintTag.push('		</div>');
+			msgPrintTag = msgPrintTag.join('');
+			$('#msgEnd').before(msgPrintTag);
+		}else{
+			msgPrintTag = msgPrintTag.join('');
+			$('#' + keyValName).append(msgPrintTag);
+		}
+
+		msgScroll();
+	}
+
+	msgReadOk = function(_param){
+		//console.log(_param);
+		if(_param.result==="1") $("#msg_content_warp").find(".my_talk_time").removeClass("my_talk_time").addClass("my_talk_time_none");
+		$.ajax({type:"POST",url:"/msgBox/msgView/msgNotReadCntAjax",dataType:"json",
+			success:function(_notReadCnt){
+				localStorage.setItem('msgCnt', _notReadCnt);
+			}
+		});
+	};
+
+	msgScroll = function(){
+		var posVal = $('#msgArea').height();
+		$('#msg_content_warp').animate({scrollTop:posVal},250);
+
+		$("#msg_content_warp").find(".my_talk_time").css({'content':''});
+	}
+
+	msgPhotoView = function(_param){
+		//console.log(_param);
+		$("#photoArea").attr("nowView",_param);
+		g_photoView.popPhotoView();
+	}
+
+
+	myArticle = function(){
+		myArticle.page = 1;
+
+		$('#popArticle').load('/views/mobile/msgBox/uiArticle.php', function(_response, _status, _xhr){
+      if('success' != _status) { /*alert(_status);*/ return;}
+
+      cl.addHistory("myArticle");
+
+ 		  myArticle.listProc();
+
+ 		  /* 추후 페이지형태로 바뀌면
+	    $('#articleList').on("scroll",function(){
+	    	$listLayer = $('#articleList');
+	    	if ($listLayer[0].scrollHeight - $listLayer.scrollTop() == $listLayer.outerHeight()){
+    			myArticle.page++;
+    			myArticle.listProc();
+    		}else{
+    			return;
+    		}
+	    });
+	    */
+
+	    $("input[name='pop_myArticleSel']").change(function() {
+	    	var myArticleSel = $(this);
+	    	setTimeout(function(){
+	    		//console.log(myArticleSel.val());
+	    		if(myArticleSel.length > 0){
+	    			//현재상태를 확인
+	    			var endSlct = myArticleSel.attr("endSlct");
+	    			switch(endSlct){
+	    				case "n":
+				    		myArticle.cleanup();
+								var data = {
+									'bangNo' : myArticleSel.val(),
+									'pmemNo' : _ptrMemNo,
+									'msgSlct' : '5', // 0:text,1:이모티콘,2:파일,3:전화,4:영상통화,5:매물소개
+									'msgCont' : '매물소개',
+									'msgEtc' : '',
+									'fileName':'',
+									'fileSize':''
+								};
+
+								if(localStorage.newMsgChk){
+									beforeSend();
+									setTimeout(function(){
+										cl.sendMsg(data);
+									},300);
+								}else{
+									cl.sendMsg(data);
+								}
+	    				break;
+	    				case "c":
+	    					new CToastEx({"msg":"[기간만료]된 매물은 소개하실 수 없습니다","elapse":2000});
+	    				break;
+	    				case "y":
+	    					new CToastEx({"msg":"[거래완료]된 매물은 소개하실 수 없습니다.","elapse":2000});
+	    				break;
+	    			}
+	    		}
+	    	},140);
+	    });
+    });
+
+    myArticle.listProc = function(){
+   		var articleParam = {"pmemNo" : $.cookie('gCCV:NO'), "pageNo" : myArticle.page, "pagePerCnt" : 50, "listMode" : "r"};
+			$.ajax({
+				async: false,
+				cache: false,
+				type:"POST",
+				url:"/articlelist/main/articleListAjax",
+				dataType:"json",
+				data:articleParam,
+				success: function(result){
+					//console.log(result);
+					if(result.total == 0){
+						$('#lodingMoreArticle').hide();
+						$("#noneList1").show();
+						$("#noneList2").show();
+					}else{
+						$('#lodingMoreArticle').hide();
+						$("#noneList1").hide();
+						$("#noneList2").hide();
+
+						$('#aricleCnt').html(result.retList.length);
+
+						arArticle = new Array();
+						for(var i=0;i<result.retList.length;i++){
+							//console.log(result.retList[i]);
+
+							var disabled = '';
+							if(result.retList[i].end_slct == 'y') disabled = 'disabled';
+
+							var bangAmt = Util.setAmount(result.retList[i].bang_amt); // 보증금
+							if(result.retList[i].bang_rent_amt != '0'){ // 월세
+								var bangRentAmt = ' / '+Util.setAmount(result.retList[i].bang_rent_amt);
+							} else {
+								var bangRentAmt = '';
+							}
+							bangPrice = bangAmt+bangRentAmt;
+
+							arArticle.push('			<li class="list_card">');
+
+							var addCSS = '';
+							if(result.retList[i].photoName){
+								arArticle.push('			  <div class="list_photo_wrap">');
+								arArticle.push('				  <a href="javascript:void(0);" class="' + result.retList[i].endMark + '"><img src="' + result.retList[i].photoName + '" alt="' + result.retList[i].regName + '"></a>');
+								arArticle.push('			  </div>');
+								addCSS = 'photo_pl';
+							}
+							arArticle.push('				<div class="list_intro">');
+							arArticle.push('					<div class="msg_regi">');
+							arArticle.push('						<div class="top_line ' + addCSS + ' mg_bt5">');
+							arArticle.push('							<p class="intro_title">');
+							arArticle.push('							' + result.retList[i].regName + '');
+							arArticle.push('							</p>');
+							arArticle.push('							' + result.retList[i].endSlct + '');
+							arArticle.push('						</div>');
+							arArticle.push('						<div class="mid_line2 ' + addCSS + ' mg_bt5">');
+							arArticle.push('							<span class="' + result.retList[i].slctMark + '_badge">' + result.retList[i].regSlct + '</span><span class="intro_price ft_navy">' + bangPrice + '</span>');
+							arArticle.push('							<p class="intro_txt font_r">');
+							arArticle.push('							' + result.retList[i].insDate + ' ' + result.retList[i].insTime + '');
+							arArticle.push('							</p>');
+							arArticle.push('						</div>');
+							arArticle.push('					</div>');
+							arArticle.push('				</div>');
+							arArticle.push('				<div class="msg_rdo">');
+							arArticle.push('					<div class="rdo_wrap">');
+							arArticle.push('						<input type="radio" class="rdo_input" name="pop_myArticleSel" value="' + result.retList[i].bang_no + '" endSlct="' + result.retList[i].end_slct + '" id="myArticleSel' + result.retList[i].bang_no + '">');
+							arArticle.push('						<label for="myArticleSel' + result.retList[i].bang_no + '" class="rdo_msg"></label>');
+							arArticle.push('					</div>');
+							arArticle.push('				</div>');
+							arArticle.push('			</li>');
+						}
+
+						arArticle = arArticle.join('');
+						$("#articleList").append(arArticle);
+
+						$('#articleList').css({'height': $(window).height() - 76 + 'px'});
+					}
+				},
+				error: function(xhr,status,error){
+					cl.ajaxErr(xhr.responseText);
+				}
+			});
+    }
+
+    myArticle.cleanup = function(){
+    	cl.delHistory();
+    	$('#popArticle').empty();
+    }
+	}
+
+
+	setWrapHeight = function(){
+		var winHeight =$(window).height();
+		$("#msg_wrap").css("height", winHeight + "px");
+	}
+
+	setWrapHeight();
+
+	$(window).on("resize",function(){
+		setWrapHeight();
+		msgScroll();
+	});
+
+	$(window).on("scroll",function(){
+		//if($(window).scrollTop() + $(window).height() < $(document).height()) return;
+		if($(window).scrollTop() > 0) return;
+		if(!callList.pageStop){
+			setTimeout(function(){
+				if(!callList.pageStop){
+					callList.page++;
+					callList.listProc();
+				}
+			},200);
+		}
+	});
+
+	$(window).on("load",function(){
+		new CUpload({'type':'msg','photoCount':1,'callback':uploadFinish});
+
+		callList = new getList();
+		callList.page = 1;
+		callList.listProc();
+
+		$("#sendConts").keypress(function (event) {
+				if (event.which === 13) {
+						msgSend();
+				}
+	  });
+
+		cl.callApi({"cmd":"message/updMsgNotReadAjax","rcvNo":_ptrMemNo});
+	});
+});
+
+//-->
+</script>
+<script>
+$(window).on("load",function(){	
+	//if($('#introSlider').length < 1 || !$('#introSlider')) m_commPopupAD.start();
+});
+</script>
+
+</body></html>
